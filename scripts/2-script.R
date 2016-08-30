@@ -79,14 +79,8 @@ x <- c(1,2,3,4,5)         # c is combine/concatenate
 c(1,2,3,4,5) -> y         # arrows point both ways (but discouraged)
 
 
+
 # TRY:  Create a new object called x5 that repeats vector x five times
-
-x5 <- c(x,x,x,x,x)
-
-y5 <- rep(x, 5)
-
-matrix(c(1:5), nrow=5, ncol=5, byrow=T)
-
 
 
 
@@ -97,6 +91,8 @@ x <- 1:10
 
 y <- 10:1
 x + y
+
+
 
 # Recycling vectors of different lengths 
 y <- 1:15
@@ -110,7 +106,7 @@ y/x
 x > 5
 x <= y
 
-cbind(x, y, x < y)
+
 
 
 
@@ -138,13 +134,6 @@ rep(17, 5)
 
 # TRY: repeat the sequence 0 to 8 seven times
 
-t <- rep(0:8, 7)
-
-length(t)
-
-
-
-
 
 
 
@@ -160,27 +149,17 @@ length(x[-5])          #NOTE: you can't mix positive and negative subscripts
 
 # TRY: index the 1st, 2nd, and 50th position in a single command
 
-x[c(1,2,50)]
 
-x[1]
-
-
-; x[2]; x[50]
 
 
 # TRY: create a new object where the elements of 'x' have a value greater than 122
 
-v <- x[x > 122]
 
-y <- x[119:196]
 
 
 # TRY: create a new object with all values of 'x' not including the first and last position
 
 
-q <- x[2:(length(x)-1)]
-
-x[c(-1,-length(x))]
 
 
 
@@ -191,6 +170,7 @@ x[c(-1,-length(x))]
 z <- c(4,5,6,NA,3,6)
 
 3 + z
+
 sd(z, na.rm=TRUE)
 
 table(is.na(z))
@@ -200,11 +180,6 @@ which(is.na(z))
 
 
 # TRY: create a new object containing all non-missing values of 'z'
-
-z2 <- z[-which(is.na(z))]
-
-z[!is.na(z)]
-
 
 
 
@@ -234,7 +209,6 @@ substr(color, 1, 3)
 
 #TRY: extract only the first letter from each element in the string from the object color
 
-substr(color, 1, 1)
 
 
 
@@ -242,9 +216,9 @@ substr(color, 1, 1)
 paste("t",1, sep="_")
 
 
+
 #TRY: use paste to create a character vector 'z1, z2,...,z10'
 
-paste("z", 1:10, sep=".")
 
 
 

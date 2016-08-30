@@ -30,18 +30,13 @@
 
 5 + 6
 
-5 + 6 * 7
-6-2
-
 
 
 
 # Using R to store and create objects -----------------------------------------
 
-
 x <- 5
 
-ls()
 
 
 
@@ -62,8 +57,6 @@ sd(x)
 y <- rnorm(mean=0, sd=1, 100)
 
 hist(y)
-
-
 
 
 
