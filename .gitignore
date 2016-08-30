@@ -1,3 +1,6 @@
 *.html
 *.pptx
 presentations/
+*.docx
+*.xlsx
+
