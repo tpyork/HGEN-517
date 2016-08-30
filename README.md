@@ -3,7 +3,7 @@
 
 - - -
 
-Share/collaborate on Github.  
+Repo for instructor materials.  
 
 
 
