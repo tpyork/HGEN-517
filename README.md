@@ -5,7 +5,8 @@
 
 Repo for instructor materials.  
 
-Do not post answer keys or student assignments.  
+Do not post answer keys or student assignments (store in Dropbox folder).
+  
 
 
 
