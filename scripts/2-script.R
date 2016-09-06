@@ -9,8 +9,7 @@
 # 1. SETUP --------------------------------------------------------------------
 
 #setwd("C:/temp/HGEN517")                       # PC / Windows
-setwd("Documents/temp/HGEN517")                 # Mac
-
+setwd("Dropbox/temp")                           # Mac
 
 
 
@@ -18,6 +17,8 @@ setwd("Documents/temp/HGEN517")                 # Mac
 
 # this function recalls the current working directory
 getwd()
+
+
 
 
 # need to create this file first using save.image(); see eof
@@ -52,6 +53,7 @@ help.search("mean")
 
 # www.rseek.org
 # stackoverflow.com
+
 
 
 
@@ -257,6 +259,7 @@ is.list(dat)
 class(dat)
 
 names(dat) <- c('number','letter','intensity','group')
+
 
 # Create a list
 
