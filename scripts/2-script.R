@@ -9,9 +9,9 @@
 # 1. SETUP --------------------------------------------------------------------
 
 #setwd("C:/temp/HGEN517")                       # PC / Windows
-setwd("Dropbox/temp")                           # Mac
+#setwd("Dropbox/temp")                           # Mac
 
-
+setwd("/Users/york2/Documents/temp")
 
 
 
@@ -71,6 +71,9 @@ assign("x", 1 + 5)
 
 y <- z <- x
 
+x <- 3
+
+
 
 
 
@@ -83,6 +86,14 @@ c(1,2,3,4,5) -> y         # arrows point both ways (but discouraged)
 
 
 # TRY:  Create a new object called x5 that repeats vector x five times
+
+
+x5 <- rep(x, 5)
+
+x5 <- c(x, x, x, x, x)
+
+x5 <- c(1:5, 1:5, 1:5, 1:5, 1:5)
+
 
 
 
@@ -137,6 +148,11 @@ rep(17, 5)
 # TRY: repeat the sequence 0 to 8 seven times
 
 
+rep(x= 0:8, times= 7)
+
+
+
+
 
 
 # 4. INDEXING AND SUBSETING A VECTOR -------------------------------------------
@@ -151,11 +167,15 @@ length(x[-5])          #NOTE: you can't mix positive and negative subscripts
 
 # TRY: index the 1st, 2nd, and 50th position in a single command
 
-
+x[c(1,2,50)]
 
 
 # TRY: create a new object where the elements of 'x' have a value greater than 122
 
+
+x[]
+
+x[x > 122]
 
 
 
@@ -164,6 +184,8 @@ length(x[-5])          #NOTE: you can't mix positive and negative subscripts
 
 
 
+
+#~
 
 # 5. MISSING DATA --------------------------------------------------------------
 
