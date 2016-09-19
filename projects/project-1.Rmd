@@ -1,0 +1,57 @@
+# -----------------------------------------------------------------------------
+# PROBLEM SET 1                                                               
+# Provide an answer below each section                                        
+# Show all work.                                                              
+# You may use class notes, books                                              
+# Email to tpyork@vcu.edu and mignognakm@mymail.vcu.edu by Tuesday, Sep 29, 5pm  
+# -----------------------------------------------------------------------------
+
+
+
+# -----------------------------------------------------------------------------
+# Read in "disease.csv" as "dat" and answer the following questions:                                             
+
+
+
+#A.  What are the dimensions of 'dat'?
+
+
+#B.  Is 'dat' a data.frame, matrix, or list?  How can you explicitly show this?
+
+
+#C.  List two differences between data.frames and matrices.
+
+
+#D.  List three different ways of creating a numeric vector from the 8th column of 'dat'.
+
+
+#E.  Subset 'dat' by each 'country' class and report the number of dimensions for each new object created.
+
+
+#F.  What is the mean and standard deviation estimates of 'phenotype' by country?
+
+
+#G.  How many unique values are represented by the family variable?  Show two ways of quantifying this.
+
+     
+#H.  Create a new data frame called dat2 containing only individuals from the US and Australia.
+
+
+#I.  Tabulate how many females are in dat2 by country.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

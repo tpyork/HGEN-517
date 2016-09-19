@@ -9,10 +9,7 @@
 # 1. SETUP --------------------------------------------------------------------
 
 #setwd("C:/temp/HGEN517")                       # PC / Windows
-#setwd("Dropbox/temp")                           # Mac
-
-setwd("/Users/york2/Documents/temp")
-
+setwd("/Users/york2/Dropbox/temp")              # Mac
 
 
 # this function recalls the current working directory
