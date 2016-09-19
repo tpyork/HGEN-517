@@ -182,8 +182,6 @@ x[x > 122]
 
 
 
-#~
-
 # 5. MISSING DATA --------------------------------------------------------------
 
 # NOTE: In general any operation on NA results in a NA value
@@ -299,6 +297,8 @@ dat[,"group"]
 dat$group
 
 
+
+#~
 
 # [ ] and [[ ]] indexing
 
