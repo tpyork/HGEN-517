@@ -296,17 +296,18 @@ dat[,"group"]
 
 dat$group
 
+dat[2:5, 3:4]
 
 
 #~
 
 # [ ] and [[ ]] indexing
 
-alist[4]
+alist[1]
 alist[[4]]
 
-mode(alist[4])
-mode(alist[[4]])
+mode(alist[1])
+mode(alist[[1]])
 
 
 
@@ -328,6 +329,11 @@ mat <- matrix(1:25, 5, 5, byrow=T)
 
 
 
+iden <- matrix(0, 5, 5)
+
+iden[1,1] <- 1
+
+diag(1, 5)
 
 
 REVIEW:       So, in practice, when do i use lists, data.frames and matrices?
@@ -370,22 +376,39 @@ names(dat) <- c('number','letter','intensity','group')
 #TRY:  create a subset of dat where rows of group only equals 2 from 'dat'
 
 
+dat[ dat$group==2 ,  ]
+
+
+
+
 
 
 #TRY:  create a vector of intensity values where group equals 1
 
+x <- dat[dat$group==1, "intensity"]
+x$intensity
 
 
 
 #TRY:  create a new variable that has the value of 'neg' if intensity is negative and 'pos' if intensity is positive
 
+neg <- dat[dat$intensity <= 0,]
+
+
+dat$sign <- ifelse(dat$intensity > 0, 'pos', 'neg')
+
+x <- 0:5
+
+ifelse(x > 0, 'pos', 'neg')
 
 
 
 #TRY:  create a new data.frame that contains only those rows where number equals 3,5,7,13,17,19
 
 
+dat[dat$number %in% c(3,5,7,13,17,19), ]
 
+is.element()
 
 
 
