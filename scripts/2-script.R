@@ -418,7 +418,7 @@ is.element()
 
 # Commands can be entered from outside the GUI
 
-source("test.txt")        #TRY: create this file and run!
+source("test.R")        #TRY: create this file and run!
 
 
 
