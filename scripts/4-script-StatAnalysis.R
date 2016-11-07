@@ -42,9 +42,9 @@ describe(dx)
 
 # TRY:  Find the mean weight of the female sample
 
+mean(dx[dx$sex=='M', 'weight'])
 
-
-
+mean(dx$weight)
 
 
 # EXAMPLE OF USER DEFINED FUNCTION -------------------------------
@@ -116,7 +116,9 @@ scatterplot(weight ~ phenotype | sex, data=dx)
 # TRY:  RUN SEPARATE REGRESSIONS BY SEX; PLOT EACH
 
 
-
+m <- lm(weight ~ phenotype, dat= dx[dx$sex=='F',])
+names(m)
+m$coef
 
 
 
@@ -239,6 +241,7 @@ a <- glm(phenotype01 ~ snp.B, data=dx, family= binomial())
 summary(a)
 
 # get odds and 95% confidence interval
+
 exp(coef(a)["snp.B"])
 exp(confint(a, parm= "snp.B"))
 
