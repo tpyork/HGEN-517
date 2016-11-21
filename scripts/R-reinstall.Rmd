@@ -1,0 +1,109 @@
+##R INSTALLATION AND MANAGEMENT FUNCTIONS                  
+###HMG 517                                                    
+
+- - -
+
+**STEP 1:** Run in the old version of R  
+
+```
+setwd("/Users/york2/Dropbox/temp")
+packages <- installed.packages()[,"Package"]
+save(packages, file="Rpackages")
+```
+
+<br>
+
+**STEP 2:** Uninstall R from the terminal.  
+*Close R first; `sudo` if no admin priv.*  
+
+```sh
+sudo rm -rf /Library/Frameworks/R.framework /Applications/R.app
+```
+
+<br>
+
+**STEP 3:** Install current R from website
+
+https://cran.r-project.org
+
+
+<br>
+
+**STEP 4:** Install saved packages in the new version:  
+```
+load("Rpackages")
+for (p in setdiff(packages, installed.packages()[,"Package"]))
+install.packages(p)
+```
+
+<br>
+
+**End reinstall**  
+
+- - -
+
+<br>
+
+**Other useful utility functions**  
+```
+getOption("defaultPackages")
+.libPaths()
+library()
+sessionInfo()
+```
+
+<br>
+
+
+Install R packages  
+```
+install.packages(c('epiR','hapassoc','limma','lme4','nlme','polycor','pwr','sem','psych','hwriter','car'))
+```
+
+<br>
+
+Install packages from source  
+```
+source('http://openmx.psyc.virginia.edu/getOpenMx.R')
+```
+
+<br>
+
+Install bioconductor  
+```
+source("http://www.bioconductor.org/biocLite.R")
+biocLite()
+```
+
+<br>
+
+Install individual bioconductor packages  
+```
+source("http://www.bioconductor.org/biocLite.R")
+
+biocLite(c('lumi','methylumi','beadarray','sscore','qvalue','simpleaffy','minfi','mdi'))
+
+install.packages("/Users/tpyork/Desktop/LumiWCluster.tar", repos=NULL, type="source")
+```
+
+<br>
+
+Update R packages  
+```
+library()
+update.packages(ask=F)
+```
+
+<br>
+
+Update Bioconductor packages  
+```
+source("http://bioconductor.org/biocLite.R")
+old.packages(repos=biocinstallRepos())
+update.packages(repos=biocinstallRepos(), ask=FALSE, checkBuilt=TRUE)
+```
+
+
+<br>
+
+*EOF*  
