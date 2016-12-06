@@ -97,7 +97,7 @@ myfunction2 <- function(x, na) {
 # x= numeric vector
 # na= option whether missing should be excluded
 
-myfunction2(x= c(1,2,3,4), na= F)
+myfunction2(x= c(1,2,NA,4), na= T)
 
 
 
@@ -166,7 +166,7 @@ temp$x4
 
 
 # INPUT= height, weight, formula (English/Metric)
-# OUTPUT= "BMI is ___ for a height of ___ (lbs/kg) and weight of ___ (in/m)"
+# OUTPUT= "BMI is ___ for a weight of ___ (lbs/kg) and height of ___ (in/m)"
 
 
 # English= (weight in pounds / (height in inches^2)) * 703

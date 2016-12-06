@@ -16,7 +16,7 @@ save(packages, file="Rpackages")
 **STEP 2:** Uninstall R from the terminal.  
 *Close R first; `sudo` if no admin priv.*  
 
-```sh
+```shell
 sudo rm -rf /Library/Frameworks/R.framework /Applications/R.app
 ```
 
