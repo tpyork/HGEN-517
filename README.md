@@ -1,16 +1,8 @@
-###HGEN 517
-####Fall 2016
-
+## HGEN517 Scripts
 - - -
 
 Repo for instructor materials.  
 
 Do not post answer keys or student assignments (store in shared Dropbox folder).
   
-
-
-
-
-
-
-*EOF*  
+Homework assignments are available [here](https://github.com/aaronwolen/hgen517-assignments) for instructors.
